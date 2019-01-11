@@ -2,7 +2,12 @@ body {
 padding-top: 70px;
 }
 
-
+#photo{
+  height: 35em;
+  background-image:url('..//img/man_measuring.jpg') !important;
+  background-size:cover;
+  background-attachment:stretch;
+}
 
 .navbar-default {
 background-color: #DED8A3;
