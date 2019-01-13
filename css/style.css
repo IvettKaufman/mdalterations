@@ -91,7 +91,7 @@ line-height: 90px;
       background-attachment:fixed;
     }
 
-    .btn-default {
+    #about .btn-default {
     background: #9e602f;
     font-family: 'Laila';
     font-size:19px;
@@ -104,7 +104,7 @@ line-height: 90px;
     margin: 50px 5px;
     cursor: pointer;;
   }
-  .btn-default:hover {
+  #about .btn-default:hover {
     box-shadow: 0px 0px 40px #9e602f;
     z-index: 2;
     background-color: #9e602f;
