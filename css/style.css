@@ -10,8 +10,10 @@ position: relative;
 margin-left: 120px;
 margin-top: 5px;
 padding-top: 15px;
-letter-spacing: 0.001px;
+letter-spacing: none;
+text-decoration: none;
 }
+
 
 .navbar-header {
   margin-top: 10px;
@@ -58,7 +60,35 @@ line-height: 90px;
   padding-top: 8%;
   padding-bottom: 8%;
 }
+#sewingcontact2,
+#sewingcontact {
+  background-image: url('..//img/wedding_dress.jpg');
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-attachment:fixed;
+  max-height: fit-content;
+  min-height: 100%;
+  height: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  overflow: visible;
+}
 
+
+#sewingcontact h4 {
+  color: black;
+  font-family: 'Laila', serif;
+  font-size: 25px;
+}
+
+#sewingcontact2 p,
+#sewingcontact p {
+  color: black;
+  font-family: 'Laila', serif;
+  font-size: 18px;
+}
 #dark_background .container{
   background-image: url('..//img/sewing_needle.jpg');
   background-color: rgba(0, 0, 0,0.7);
@@ -106,6 +136,7 @@ line-height: 90px;
       background-attachment:fixed;
     }
 
+  .btn-default,
     #about .btn-default {
     background: #9e602f;
     font-family: 'Laila';
@@ -126,7 +157,7 @@ line-height: 90px;
     color: rgba(254, 254, 254);
     font-weight: bolder;
     }
-
+.col-container img,
 .container img{
   box-sizing: border-box;
   border: 3px solid #9e602f;
@@ -137,6 +168,7 @@ line-height: 90px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 }
 
@@ -354,11 +386,73 @@ margin-top: 10px
 	margin-bottom: 5px;
 }
 
+#contact_form_wrap {
+  max-width: inherit;
+}
+#testimonials {
+background-image: url('..//img/wedding_dress.jpg');
+background-color: rgba(255, 255, 255, 0.9);
+background-blend-mode: lighten;
+background-position: 50% 50%;
+background-size:cover;
+background-attachment:fixed;
+max-height: fit-content;
+min-height: 100%;
+height: 100%;
+padding-top: 8%;
+padding-bottom: 8%;
+overflow: visible;
+}
+
+#testimonials h4 {
+  font-family: 'Laila';
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+#testimonials p {
+  font-family: 'Laila';
+  font-size: 18px;
+  color: black;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+#testimonials hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  width: 200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+#feedback {
+  background-image: url('..//img/sewing_needle.jpg');
+  background-color: rgba(0, 0, 0,0.7);
+  background-blend-mode:darken;
+  width: 100%;
+  background-size:cover;
+  background-attachment:fixed;
+  position: inherit;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+}
+
+#feedback textarea {
+  min-height: 150px;
+  height: fit-content;
+}
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
-  .navbar-header,
+.navbar-brand,
+.navbar-header,
   #phone {
     float: left;
     margin-left: 2px;
@@ -377,11 +471,12 @@ margin-top: 10px
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: left;
-    overflow-x: hidden;
+    font-size: 20px;
+    margin-left: 10px
 	}
 
 	.footer-distributed .footer-center i{
-		margin-left: 0;
+		margin-left: 0px;
 	}
 
 }
