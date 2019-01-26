@@ -199,6 +199,14 @@ margin-right:10%;
 margin-bottom: 5%
 }
 
+#flickr2 ul{
+max-height:250px;
+max-width: 250px;
+height:100%;
+margin:10px;
+box-sizing: border-box;
+border: 3px solid #9e602f;
+}
 
 
 .navbar-default {
@@ -444,11 +452,15 @@ overflow: visible;
   margin-top: 5px;
   margin-bottom: 5px;
   border: 0;
-  width: 200px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-top: 1px; color: black;);
 }
 
+#testimonials td{
+    padding:10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
+}
 #feedback {
   background-image: url('..//img/sewing_needle.jpg');
   background-color: rgba(0, 0, 0,0.7);

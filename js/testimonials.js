@@ -18,11 +18,9 @@ $.ajax(settings2).done(function (data) {
 
 $.each( data.comments.comment, function( i, gp ) {
 
-  var _content2 = gp._content;
+  var content2 = gp._content
 
-  console.log(_content2);
+  $("#flickr2").append("<tr><td>" + content2 + "<br><hr></td><td>");
 
-  $("#flickr2").append("<p>" + _content2 + "</p>");
-
-  });
-  });
+});
+});
