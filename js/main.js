@@ -129,3 +129,5 @@ closeBtn.onclick = () => {
     nextBtn.style.display = "block";
     prevBtn.style.display = "block";
 }
+
+// Specify the Flickr Settings for testimonials
