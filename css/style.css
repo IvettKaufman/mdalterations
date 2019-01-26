@@ -522,10 +522,10 @@ ul, li {list-style:none;}
 
 /* modal overlay
 -----------------------------*/
-#overlay {width:100%; background-color:rgba(0,0,0,0.8); height:100%; position:fixed; top:0; left:0; display:none; }
+#overlay {width:100%; height:100%; position:fixed; top:10%; left:0; display:none; }
 
-#modal {max-width:1080px; width:85%; position:relative; top:50%; left:50%; transform: translate(-50%, -50%); opacity:0; transition:all .25s ease; }
-#modal > img {height:50%; margin-left:20%;display:block;}
+#modal {display: none; background-color:rgba(0,0,0,0.8); max-width:1080px; width:85%; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); opacity:0; transition:all .25s ease; }
+#modal > img {height:50%; ;display:block;margin: 0 auto;}
 .show #modal {opacity:1;}
 
 #closeBtn {position:absolute; top:-20px; right:-10px; cursor:pointer; background-color:#111; width:36px; height:36px; border-radius:50px; text-align:center; line-height:35px; font-size:20px; border:1px solid #fff; color:#fff;}
@@ -551,8 +551,8 @@ ul, li {list-style:none;}
 	.thumbnail {width:49%;}
 }
 
-@media (max-width: 720px) {
-	#modal {width:95%}
+@media (min-width: 720px) {
+	#modal {display:block;}
 	#prevBtn {left:0;}
 	#prevBtn:hover {left:0; padding-right:10px;}
 	#nextBtn {right:0; }

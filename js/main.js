@@ -1,10 +1,13 @@
 $('.nav-collapse').on('click',function(){
     $('.collapse').collapse('hide');
 })
+
 // Specify the Flickr Settings
 
-const galleryID = "72157705903646325"; // flickr gallery id
-const maxThumbs = 24; // max number of images to display in grid
+const maxThumbs = 60; // max number of images to display in grid
+
+var mykey = config.MY_KEY;
+var photosetID = config.ALBUM_ID;
 
 // declare variables
 const thumbContainer = document.getElementById('thumbnails');
@@ -30,7 +33,8 @@ const createThumb = (num, url, title) => {
 const loadJSON = (callback) => {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.overrideMimeType("application/json");
-    xmlhttp.open("GET", 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=ee86cc08ba140f0f7c1a6c8baaea50aa&photoset_id=72157705903646325&format=json&nojsoncallback=1son&nojsoncallback=1', true);
+    xmlhttp.open("GET", 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=' + mykey + '&photoset_id=' + photosetID + '&format=json&nojsoncallback=1son&nojsoncallback=1', true);
+
     xmlhttp.onreadystatechange = () => {
         if (xmlhttp.readyState === 4 && xmlhttp.status == "200") {
             callback(xmlhttp.responseText);
@@ -52,7 +56,7 @@ loadJSON((text) => {
         const title = photo[i].title;
         const imgURL = 'https://farm' + farmID + '.staticflickr.com/' + serverID + '/' + id + '_' + secret + '.jpg';
 
-       createThumb(i, imgURL, title);
+       createThumb(i, imgURL);
 
     }
 });
