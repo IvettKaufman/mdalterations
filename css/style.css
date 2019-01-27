@@ -14,13 +14,24 @@ letter-spacing: none;
 text-decoration: none;
 }
 
-
 .navbar-header {
   margin-top: 10px;
 }
 
 #photo.container{
   background-image:url('..//img/man_measuring.jpg');
+  background-size: cover;
+  width: 100%;
+  max-height: 678px;
+  min-height: 300px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+
+#photoabouttab.container{
+  background-image:url('..//img/man_suit_buttons.jpg');
   background-size: cover;
   width: 100%;
   max-height: 678px;
@@ -60,8 +71,7 @@ line-height: 90px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#sewingcontact2,
-#sewingcontact {
+#sewingcontact, #abouttab {
   background-image: url('..//img/wedding_dress.jpg');
   background-color: rgba(255, 255, 255, 0.9);
   background-blend-mode: lighten;
@@ -72,7 +82,7 @@ line-height: 90px;
   min-height: 100%;
   height: 100%;
   padding-top: 8%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
   overflow: visible;
 }
 
@@ -83,8 +93,7 @@ line-height: 90px;
   font-size: 25px;
 }
 
-#sewingcontact2 p,
-#sewingcontact p {
+#sewingcontact p, #abouttab p {
   color: black;
   font-family: 'Laila', serif;
   font-size: 18px;
@@ -97,11 +106,11 @@ line-height: 90px;
   background-size:cover;
   background-attachment:fixed;
   position: relative;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
 }
 
-#dark_background .center ,h2{
+#dark_background h2,h2, #about h2, #abouttab h2,.center{
   font-family: 'Cookie';
   font-size: 48px;
   font-weight: 400;
@@ -110,7 +119,7 @@ line-height: 90px;
   line-height: 90px;
   }
 
-#dark_background.center,p{
+#dark_background.center,p {
     font-family: 'Laila';
     font-size: 17px;
     color: #ffffff;
@@ -118,22 +127,63 @@ line-height: 90px;
     line-height: 30px;
   }
 
+table.table{
+      border: hidden;
+      background-color: transparent !important;
+      max-width: 95%;
+      margin: 0 auto;
+    }
+
+  #dark_background li{
+    text-align: left;
+    font-family: 'Laila';
+    font-size:calc(13px + 0.2vw);
+    color: #ffffff;
+    list-style-type:disc;
+    list-style-position:inside;
+    padding-left: 35%;
+  }
+
+
+    #table2 table{
+      border: hidden;
+      max-width: 650px !important;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    #table2 h2{
+      font-size:calc(40px + 0.5vw);
+      text-align: left;
+    }
+
+  #table2 li{
+    font-family: 'Laila';
+    font-size:calc(13px + 0.2vw);
+    color: #ffffff;
+    text-align:left;
+    padding-left: 0;
+    padding-bottom: 2.5%;
+    list-style-type:disc;
+    list-style-position:outside;
+    }
+
   #about p{
     font-family: 'Laila';
     font-size: 17px;
     color: black;
     vertical-align: middle;
     line-height: 30px;
-    padding-bottom: 5%;
     }
 
-    #about {
+    #about, #abouttab {
       background-image: url('..//img/wedding_dress.jpg');
       background-color: rgba(255, 255, 255, 0.9);
       background-blend-mode: lighten;
       background-position: 50% 50%;
       background-size:cover;
       background-attachment:fixed;
+      padding-top: 5%;
     }
 
   .btn-default,
