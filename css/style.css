@@ -91,6 +91,11 @@ line-height: 90px;
   min-height: 200px;
   height: fit-content;
 }
+#sewingcontact2 p {
+  color: black;
+  font-family: 'Laila', serif;
+  font-size: 18px;
+}
 
 
 #sewingcontact h4 {
@@ -100,6 +105,7 @@ line-height: 90px;
   margin-top: 60px;
   margin-bottom: 30px;
 }
+
 
 #sewingcontact p, #abouttab p {
   color: black;
