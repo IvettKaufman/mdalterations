@@ -148,8 +148,9 @@ table.table{
     #table2 table{
       border: hidden;
       max-width: 650px !important;
-      margin: 0 auto;
       text-align: left;
+      margin-right: 30%;
+      margin-right: auto;
     }
 
     #table2 h2{
