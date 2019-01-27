@@ -2,13 +2,10 @@ $('.nav-collapse').on('click',function(){
     $('.collapse').collapse('hide');
 })
 
-var mykey = config.MY_KEY;
-var photosetID = config.ALBUM_ID;
-
 var settings2 ={
   "async": true,
   "crossDomain": true,
-  "url":"https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&api_key=" + mykey + "&photo_id=45969780235&format=json&nojsoncallback=1",
+  "url":"https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&api_key=" + "80d72794b84477bdecafea98c3d43c7b" + "&photo_id=45969780235&format=json&nojsoncallback=1",
   "method": "GET",
   "headers": {}
 }
