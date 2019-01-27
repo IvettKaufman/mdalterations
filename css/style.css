@@ -5,7 +5,7 @@ padding-top: 70px;
 #phone {
 font-family: 'Laila', serif;
 font-size: 28px;
-color: black;
+color: #9e602f;
 position: relative;
 margin-left: 120px;
 margin-top: 5px;
@@ -76,11 +76,18 @@ line-height: 90px;
   overflow: visible;
 }
 
+#sewingcontact2 textarea {
+  min-height: 200px;
+  height: fit-content;
+}
+
 
 #sewingcontact h4 {
   color: black;
   font-family: 'Laila', serif;
   font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #sewingcontact2 p,
@@ -108,6 +115,7 @@ line-height: 90px;
   color: #9e602f;
   vertical-align: middle;
   line-height: 90px;
+  margin-bottom: 40px;
   }
 
 #dark_background.center,p{
@@ -116,7 +124,20 @@ line-height: 90px;
     color: #ffffff;
     vertical-align: middle;
     line-height: 30px;
+    margin-right: 15px;
   }
+
+#dark_background h4{
+  color: white;
+  font-family: 'Laila', serif;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+#dark_background img {
+  margin-top: 60px;
+}
 
   #about p{
     font-family: 'Laila';
@@ -177,13 +198,23 @@ margin: 0 auto;
 }
 
 #gallery.container-fluid{
-  background-image: url('..//img/sewing_needle.jpg');
-  background-color: rgba(0, 0, 0,0.7);
-  background-blend-mode:darken;
+  background-image: url('..//img/tailroing_desk.jpg');
+  background-color: rgba(0, 0, 0,0.1);
+  background-blend-mode:lighten;
   width: 100%;
   background-size:cover;
   background-attachment:fixed;
 }
+
+#gallery h2{
+  font-weight: normal;
+  font-size: 50px;
+
+}
+
+
+
+
 #flickr img{
 max-height:250px;
 max-width: 250px;
@@ -202,7 +233,7 @@ margin-bottom: 5%
 
 
 .navbar-default {
-background-color: #DED8A3;
+background-color: #333333;
 box-shadow: 0 1px 1px 0 rgba(222, 216, 163, 0.12);
 border-color: transparent;
 background-image: none;
@@ -212,26 +243,26 @@ padding-right: 10px;
 .navbar-default .navbar-nav>ul {
 margin-right: 30px;
 width: 100%;
-background-color: #999;
+background-color: #9e602f;
 height: 20px;
 }
 .navbar-default .navbar-nav>li>a {
 text-transform: uppercase;
 font-family: 'Laila', serif;
 font-size: 14px;
-color: black;
+color: #9e602f;
 padding-top: 24px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: rgba(0, 0, 0);
+color: #9e602f;
 font-weight: bolder;
 font-size: 14px;
 }
 .navbar-default .navbar-brand {
-color: black;
+color: #9e602f;
 font-family: 'Cookie', cursive;
 font-weight: bolder;
-font-size:40px;
+font-size:50px;
 margin-top: 10px
 }
 .navbar-brand {
@@ -240,13 +271,13 @@ margin-top: 10px
 
 .navbar-brand span {
   font-family: 'Laila', serif;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 
 
 .footer-distributed{
-  background-color: #DED8A3;
+  background-color: #333333;
   box-shadow: 0 1px 1px 0 rgba(222, 216, 163, 0.12);
   border-color: transparent;
   background-image: none;
@@ -277,20 +308,20 @@ margin-top: 10px
 /* The company logo */
 
 .footer-distributed h3{
-	color: black;
+	color: #9e602f;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
   font-weight: bolder;
 }
 
 .footer-distributed h3 span{
-	color: black;
+	color:  #9e602f;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color: black;
+	color:  #9e602f;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -303,7 +334,7 @@ margin-top: 10px
 }
 
 .footer-distributed .footer-company-name{
-	color:  black;
+	color: #9e602f;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -317,7 +348,7 @@ margin-top: 10px
 }
 
 .footer-distributed .footer-center i{
-	background-color:  black;
+	background-color: #9e602f;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -336,7 +367,7 @@ margin-top: 10px
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: black;
+	color:  #9e602f;
 	vertical-align: middle;
 	margin:0;
 }
@@ -344,14 +375,14 @@ margin-top: 10px
 .footer-distributed .footer-center p span{
 	display: block;
 	font-weight: normal;
-  color: black;
+  color:  #9e602f;
 	font-size:14px;
 	line-height:2;
 }
 
 
 .footer-distributed .footer-center p a{
-	color: black;
+	color:  #9e602f;
 	text-decoration: none;;
 }
 
@@ -360,17 +391,17 @@ margin-top: 10px
 
 .footer-distributed .footer-right{
 	width: 30%;
-  color: black;
+  color:  #9e602f;
   margin-left: 30px;
 }
 
 .footer-right p{
-  color:black;
+  color:  #9e602f;
 }
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color: black;
+	color:  #9e602f;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -378,7 +409,7 @@ margin-top: 10px
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  black;
+	color:   #9e602f;
 	font-size: 25px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -393,7 +424,7 @@ margin-top: 10px
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: black;
+	background-color:  #9e602f;
 	border-radius: 2px;
 
 	font-size: 20px;
