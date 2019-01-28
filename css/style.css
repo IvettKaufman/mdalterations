@@ -19,7 +19,7 @@ text-decoration: none;
 }
 
 #photo.container{
-  background-image:url('..//img/man_measuring.jpg');
+  background-image:url('..//img/welcome.jpg');
   background-size: cover;
   width: 100%;
   max-height: 678px;
@@ -29,9 +29,19 @@ text-decoration: none;
   padding-top: 23%;
   padding-bottom: 23%;
 }
-
+#photoservices.container{
+  background-image:url('..//img/jacket.jpg');
+  background-size: cover;
+  width: 100%;
+  max-height: 678px;
+  min-height: 300px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
 #photoabouttab.container{
-  background-image:url('..//img/man_suit_buttons.jpg');
+  background-image:url('..//img/dress.jpg');
   background-size: cover;
   width: 100%;
   max-height: 678px;
@@ -42,6 +52,40 @@ text-decoration: none;
   padding-bottom: 23%;
 }
 
+#photoservices.container{
+  background-image:url('..//img/jacket.jpg');
+  background-size: cover;
+  width: 100%;
+  max-height: 678px;
+  min-height: 300px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+#phototest.container{
+  background-image:url('..//img/weddingdress.jpg');
+  background-size: cover;
+  width: 100%;
+  min-width: 100%;
+  max-height: 678px;
+  min-height: 300px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+#photocontact.container{
+  background-image:url('..//img/shirt_main.jpeg');
+  background-size: cover;
+  width: 100%;
+  max-height: 678px;
+  min-height: 300px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
 #statement h1 {
 font-family: 'Cookie';
 font-size: 48px;
@@ -122,6 +166,11 @@ line-height: 90px;
   position: relative;
   padding-top: 5%;
   padding-bottom: 10%;
+}
+
+iframe {
+  width: 100%;
+  min-width: 100%;
 }
 
 #dark_background h2,h2, #about h2, #abouttab h2,.center{
@@ -270,9 +319,6 @@ margin: 0 auto;
   font-size: 50px;
 
 }
-
-
-
 
 #flickr img{
 max-height:250px;
