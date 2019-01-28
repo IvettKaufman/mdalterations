@@ -1,6 +1,3 @@
-$('.nav-collapse').on('click',function(){
-    $('.collapse').collapse('hide');
-})
 
 var settings2 ={
   "async": true,
@@ -17,7 +14,7 @@ $.each( data.comments.comment, function( i, gp ) {
 
   var content2 = gp._content
 
-  $("#flickr2").append("<tr><td>" + content2 + "<br><hr></td><td>");
+  $("#flickr2").append("<tr><td><br>" + content2 + "<br><br></td></tr>");
 
 });
 });
