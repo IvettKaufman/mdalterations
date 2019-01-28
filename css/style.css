@@ -306,7 +306,7 @@ margin: 0 auto;
 }
 
 #gallery.container-fluid{
-  background-image: url('..//img/tailroing_desk.jpg');
+  background-image: url('..//img/gallery_background.jpeg');
   background-color: rgba(0, 0, 0,0.1);
   background-blend-mode:lighten;
   width: 100%;
