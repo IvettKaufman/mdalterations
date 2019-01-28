@@ -1,7 +1,3 @@
-$('.nav-collapse').on('click',function(){
-    $('.collapse').collapse('hide');
-})
-
 // Specify the Flickr Settings
 
 const maxThumbs = 60; // max number of images to display in grid
