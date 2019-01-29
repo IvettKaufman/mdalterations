@@ -146,14 +146,13 @@ line-height: 90px;
 }
 
 #about .col-container .row {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 #about .col-container .col-sm-6 {
   margin-top: 20px;
   margin-bottom: 30px;
-  d
 }
 
 #sewingcontact2 textarea {
