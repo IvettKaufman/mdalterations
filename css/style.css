@@ -741,6 +741,8 @@ ul, li {list-style:none;}
   #dark_background li {
     display: block;
     width: 100%;
+    text-align: left;
+    padding-left: 2px;
   }
 }
 
