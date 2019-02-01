@@ -737,6 +737,13 @@ ul, li {list-style:none;}
 	.thumbnail img {width:100%; height:auto;}
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  #dark_background li {
+    display: block;
+    width: 100%;
+  }
+}
+
 /* firefox fix
 -----------------------------*/
 @-moz-document url-prefix() {
