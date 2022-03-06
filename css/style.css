@@ -4,7 +4,7 @@ padding-top: 70px;
 
 #phone {
 font-family: 'Laila', serif;
-font-size: 28px;
+font-size: 12px;
 color: #ffffff;
 position: relative;
 margin-left: 120px;
@@ -14,8 +14,94 @@ letter-spacing: none;
 text-decoration: none;
 }
 
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar-header {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.navDetails > p {
+  margin: 0 !important;
+}
+
+.fixCityNav {
+  font-size: 10px;
+}
+
+.footer-right {
+  margin: 0 !important;
+}
+.adressSection {
+  display: flex;
+  justify-content: center;
+}
+.adressSectionPart {
+margin: 20px 40px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1067px) {
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+  .nav-link {
+    font-size: 10px !important;
+  }
+  .navDetails {
+    transform: scale(.9);
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 797px) {
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+  .nav-link {
+    font-size: 8px !important;
+  }
+  .navDetails {
+    transform: scale(.7);
+  }
+}
+@media screen and (max-width: 767px) {
+  .navDetails {
+    position: absolute !important;
+    transform: translateY(15px);
+    left: 5px;
+  }
+  .navbar-brand {
+    font-size: 30px !important;
+    transform: translateY(-15px);
+  }
+  .navDetails > p:first-child {
+    transform: translateY(20px);
+  }
+  .navDetails > p:nth-child(2) {
+    transform: translateY(0px);
+  }
+  .navbar-header {
+    width: 100% !important;
+  }
+  .container-fluid {
+    flex-direction: column;
+  }
+  .adressSection {
+    flex-direction: column;
+  }
+  .fixMobileWidth {
+    overflow: hidden !important;
+  }
+  .fixMobileCityBtn {
+    margin-bottom: 80px;
+    transform: translateY(-30px);
+  }
+}
+
+.contact-phone {
+  margin: 0 !important;
+  margin-left: 20px !important;
 }
 
 #photo.container{
