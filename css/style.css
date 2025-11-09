@@ -3,15 +3,31 @@ padding-top: 70px;
 }
 
 #phone {
-font-family: 'Laila', serif;
-font-size: 15px;
-color: #ffffff;
-position: relative;
-margin-left: 120px;
-margin-top: 5px;
-padding-top: 15px;
-letter-spacing: none;
-text-decoration: none;
+  font-family: 'Laila', serif;
+  font-size: 17px;
+  color: #ffffff;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 5px;
+  padding-top: 15px;
+  letter-spacing: normal; /* 'none' isn't valid, so use 'normal' */
+  text-decoration: none;
+  top: 2px; /* moves the phone number 2px lower */
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 400; /* normal weight */
+  text-decoration: none;
+  transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #ffffff !important; /* no grey on hover */
+  font-weight: 600; /* make it thicker on hover */
+  transform: scale(1.02); /* optional: subtle grow effect */
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -173,6 +189,102 @@ margin: 20px 40px;
   padding-bottom: 23%;
 }
 
+/* ---------- Container for About Images ---------- */
+#about-images {
+  max-width: 900px;        
+  margin: 0 auto 50px;     
+  display: flex;
+  flex-direction: column;
+  gap: 20px;               
+}
+
+/* ---------- Rows ---------- */
+#about-images .image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; 
+  gap: 20px;                      
+}
+
+/* ---------- Images ---------- */
+#about-images img {
+  width: 30%;               
+  height: auto;
+  display: block;
+  object-fit: contain;      
+  border: 2px solid black;   /* <- adds black border */
+  box-sizing: border-box;    /* ensures border doesn't change size */
+}
+
+/* Second row adjustments */
+#about-images .image-row.second {
+  justify-content: center;   
+}
+
+#about-images .image-row.second img {
+  width: 30%;               
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  #about-images .image-row {
+    flex-wrap: wrap;         
+    justify-content: center;
+    gap: 10px;
+  }
+  #about-images img {
+    width: 45%;              
+    margin-bottom: 10px;
+  }
+  #about-images .image-row.second img {
+    width: 45%;              
+  }
+}
+#about p {
+  margin-bottom: 30px; /* space below the paragraph */
+}
+/* Center the whole list while keeping bullets aligned to the text */
+#abouttab ul {
+  display: inline-block;      /* keeps it centered as one block */
+  text-align: left;           /* aligns bullets and text properly */
+  padding-left: 20px;         /* keeps normal bullet spacing */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#abouttab ul li {
+  font-family: 'Laila', serif;
+  font-size: 18px;
+  color: black;
+  line-height: 30px;
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+#abouttab .row {
+  display: flex;
+  align-items: center; /* vertically center image and text */
+}
+
+#abouttab img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centers the image horizontally within its column */
+}
+#dark_background {
+  margin-bottom: 0;      /* remove outer bottom space */
+  padding-bottom: 0;     /* remove inner bottom padding */
+}
+
+#dark_background a.btn {
+  margin-top: 20px;      /* add some space above button (from the list) */
+  margin-bottom: -10px;  /* pull next section closer */
+}
+
+#dark_background br {
+  display: none;         /* ignore all <br> tags for cleaner spacing */
+}
+
 a[href^="tel"]{
     color:inherit;
     text-decoration:none;
@@ -202,7 +314,7 @@ line-height: 90px;
   background-color: rgba(255, 255, 255, 0.9);
   background-blend-mode: lighten;
   background-position: 50% 50%;
-  background-size:cover;
+  backgro/und-size:cover;
   background-attachment:fixed;
   max-height: 484.65px;
   min-height: 300px;
@@ -854,4 +966,8 @@ ul, li {list-style:none;}
 
 	#nextBtn {right:-44px; }
 	#nextBtn:hover {right:-59px;}
+}
+
+#suitsCarousel img {
+  border: none !important;
 }
